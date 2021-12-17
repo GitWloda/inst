@@ -17,6 +17,7 @@ cd /home/virt
 mkdir git
 cd git
 git clone https://github.com/GitWloda/myi3Config.git
+chmod 777 install.sh
 EDITOR=vim visudo
 echo "do passwd root and passwd virt"
 exit
