@@ -7,6 +7,7 @@ mkfs.ext4 /dev/sda2
 mount /dev/sda2 /mnt
 pacstrap /mnt base linux linux-firmware
 genfstab -U /mnt >> /mnt/etc/fstab
-cp ./inst2 /mnt
+chmod 777 ./inst2.sh
+cp ./inst2.sh /mnt
 arch-chroot /mnt &
-./inst2
+./inst2.sh
