@@ -1,6 +1,6 @@
 ln -sf /usr/share/zoneinfo/Europe/Rome /etc/loacltime
 hwclock --systohc
-echo "it_IT.UTF-8 UTF-8" > /etclocale.gen
+echo "it_IT.UTF-8 UTF-8" > /etc/locale.gen
 locale-gen
 touch /etc/locale.conf
 echo LANG=it_IT.UTF-8 > etc/locale.conf
