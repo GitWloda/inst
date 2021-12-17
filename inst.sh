@@ -6,7 +6,7 @@ mkfs.ext4 /dev/sda2
 mount /dev/sda2 /mnt
 echo "Include = /etc/pacman.d/mirrorlist" >> /etc/pacman.conf
 echo "ILoveCandy" >> /etc/pacman.conf
-echo "Include = /etc/pacman.d/mirrorlist" >> /etc/pacman.conf
+echo "ParallelDownloads = 55" >> /etc/pacman.conf
 pacstrap /mnt base linux linux-firmware grub efibootmgr amd-ucode networkmanager vim sudo 
 genfstab -U /mnt >> /mnt/etc/fstab
 chmod 777 ./inst2.sh
