@@ -9,4 +9,3 @@ genfstab -U /mnt >> /mnt/etc/fstab
 chmod 777 ./inst2.sh
 cp ./inst2.sh /mnt
 arch-chroot /mnt &
-./inst2.sh
