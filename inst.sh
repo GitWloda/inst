@@ -1,5 +1,4 @@
 loadkeys it
-ping google.com 
 timedatactl set-ntp true
 cfdisk
 mkfs.fat -F 32 /dev/sda1
