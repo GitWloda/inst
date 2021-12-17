@@ -1,5 +1,5 @@
 loadkeys it
-ping google.com || echo "ERRORE INTERNET" && exit
+ping google.com 
 timedatactl set-ntp true
 cfdisk
 mkfs.fat -F 32 /dev/sda1
