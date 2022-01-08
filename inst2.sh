@@ -8,7 +8,7 @@ echo KEYMAP=it > /etc/vsconsole.conf
 echo virt > /etc/hostname
 echo "127.0.0.1 localhost.localdomain virt" > /etc/hosts
 mkdir /boot/efi
-mount /dev/sda1 /boot/efi
+mount /dev/vda1 /boot/efi
 grub-install --target=x86_64-efi --efi-directory=/boot/efi --bootloader-id=GRUB --removable
 grub-mkconfig -o /boot/grub/grub.cfg
 systemctl enable NetworkManager
