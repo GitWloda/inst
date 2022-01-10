@@ -13,11 +13,6 @@ grub-install --target=x86_64-efi --efi-directory=/boot/efi --bootloader-id=GRUB 
 grub-mkconfig -o /boot/grub/grub.cfg
 systemctl enable NetworkManager
 useradd -m -g users -G wheel -s /bin/bash virt
-cd /home/virt
-mkdir git
-cd git
-git clone https://github.com/GitWloda/myi3Config.git
-chmod 777 install.sh
 EDITOR=vim visudo
 echo "do passwd root and passwd virt"
 exit
